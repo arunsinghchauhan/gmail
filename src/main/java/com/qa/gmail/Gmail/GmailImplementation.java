@@ -3,6 +3,8 @@ package com.qa.gmail.Gmail;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import junit.framework.Assert;
+
 class GmailImplementation {
 
 	WebDriver driver;
@@ -18,9 +20,12 @@ class GmailImplementation {
 	
 	public void enterUrl()
 	{
-		driver.get("https://mail.google.com");
-		System.out.println("Respective URL is launched");
-		
+		  driver.get("https://mail.google.com");
+		  System.out.println("Respective GoogleMail URL is launched");
+		  String atitle= driver.getTitle();
+		  String eTitle="Gmail"; 
+		  Assert.assertEquals(eTitle, atitle);
+		  System.out.println("Assertion is passed");
 	}
 	
 	

@@ -2,9 +2,6 @@ package com.qa.gmail.Gmail;
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import junit.framework.Assert;
-
 public class GmailLoginTest {
 
 	GmailImplementation g= new GmailImplementation();
@@ -19,12 +16,6 @@ public class GmailLoginTest {
 	public void enter_Url()
 	{
 		g.enterUrl();
-		/*
-		 * String aTitle="Gmail"; String eTitle="";
-		 */
-		
-		//Assert.assertEquals(eTitle, aTitle);
-		
 	}
 	
 	
